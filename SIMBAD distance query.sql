@@ -1,0 +1,1 @@
+SELECT ra, dec, main_id, dist, unit, otype_txt FROM basic  JOIN mesDistance AS mesDistance ON basic.oid  = mesDistance.oidref WHERE CONTAINS(POINT('ICRS', basic.ra, basic.dec), CIRCLE('ICRS', 140.4772, 51.03428, 0.5)) = 1 AND unit = 'Mpc'
