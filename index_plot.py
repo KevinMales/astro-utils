@@ -16,7 +16,7 @@ THUMBNAIL_SIZE = 100  # max thumbnail size in pixels
 BORDER = 5  # border size around thumbnail and label in pixels
 MARGIN = 20  # margin around outside of composite image in pixels (fiducial line labels are drawn in here)
 FONT = ImageFont.truetype(font = 'arial.ttf', size = 12)  # font for text labels
-LOG_STEP_WIDTH = 400  # width of each logarithmic step along x in pixels
+LOG_STEP_WIDTH = 500  # width of each logarithmic step along x in pixels
 
 # boundary lines to be drawn on the plot 
 
