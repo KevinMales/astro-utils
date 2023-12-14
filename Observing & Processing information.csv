@@ -1,16 +1,87 @@
-Imaging Date,Start Time,Target,Type,Caldwell,RA,Dec,Dist (ly),ISO,Lights,Darks,Flats,Filename,Processing Date
-22/10/2020,21:09,Altair,Star,,19h50m46.99855s,+08d52m05.9563s,16.7,1600,1 x 20s,NA,NA,Altair 2020-10-22,11/12/2020
-22/10/2020,21:06,Deneb,Star,,20h41m26s,+45d16m49s,2615,1600,1 x 20s,NA,NA,Deneb 2020-10-22,11/12/2020
-22/10/2020,21:00,Vega,Star,,18h36m56.33635s,+38d47m01.2802s,25,800,1 x 20s,NA,NA,Vega 2020-10-22,6/12/2020
-5/11/2020,19:49,Albireo,Star,,19h30m43.286s,+27d57m34.84s,430,800,1 x 20s,NA,NA,Albireo 2020-11-05,5/11/2020
-5/11/2020,19:58,Perseus double cluster,Cluster,C14,02h20m0.0s,+57d08m0.0s,7500,800,30 x 60s,10 x 60s,NA,perseus double cluster,20/11/2020
-6/11/2020,21:28,32 Eridani,Star,,03h54m17s,-02d57m16s,313,800,1 x 20s,NA,NA,32 eridani 2020-11-06,14/11/2020
-6/11/2020,21:26,40 Eridani - Keid,Star,,04h15m16.31963s,-07d39m10.3404s,16,800,1 x 20s,NA,NA,40 Eridani - Keid 2020-11-06,14/11/2020
-6/11/2020,18:18,M27 Dumbbell nebula,Nebula,,19h59m36.340s,+22d43m16.09s,1200,800,40 x 60s,10 x 60s,NA,M27 dumbbell nebula 2020-11-06_crop,29/11/2020
-6/11/2020,21:37,M74,Galaxy,,01h36m41.8s,+15d47m01s,30000000,800,1 x 60s,NA,NA,,10/1/2021
-6/11/2020,19:11,NGC 2403,Galaxy,C7,07h36m51.4s,+65d36m09s,9700000,800,11 x 120s,20 x 120s,NA,ngc 2403 2020-11-06,1/1/2021
-17/12/2020,18:46,IC1805 Heart Nebula,Nebula,,02h33m22s,+61d26m36s,7500,800,40 x 60s,10 x 60s,NA,ic1805 heart nebula,31/12/2020
-17/12/2020,19:42,M31 Andromeda,Galaxy,,00h42m44.3s,+41d16m09s,2500000,800,40 x 60s,10 x 60s,NA,,31/01/2021
-22/12/2020,16:36,Jupyter/Saturn conjunction,Planet,,,,,800,"20s, 30s, 60s",NA,NA,,
-27/12/2020,18:33,IC 1396 Elephant's Trunk Nebula,Nebula,,21h39m0.0s,+57d29m24s,2400,800,23 x 180s,17 x 180s,40,IC 1396 (2),31/12/2020
-22/01/2021,18:57,M33 triangulum galaxy,Galaxy,,01h33m50.02s,+30d39m36.7s,3200000,800,20 x 120s,20 x 120s,40,M33,24/01/2021
+Imaging Date,Start Time,Target,Type,Caldwell,RA,Dec,Dist (ly),ISO,Lights,Darks,Exposure,Flats,Filename,Processing Date,Processing notes,Notes
+22/10/2020,21:09,Altair,Star,,19h50m46.99855s,+08d52m05.9563s,16.7,1600,1 x 20s,NA,0:00:20,NA,Altair 2020-10-22,11/12/2020,"Darktable, save jpg",First session with EOS 600D attached to telescope. Manual alignment on Winter triangle stars
+22/10/2020,21:06,Deneb,Star,,20h41m26s,+45d16m49s,2615,1600,1 x 20s,NA,0:00:20,NA,Deneb 2020-10-22,11/12/2020,"Darktable, save jpg", - No guiding
+22/10/2020,21:00,Vega,Star,,18h36m56.33635s,+38d47m01.2802s,25,800,1 x 20s,NA,0:00:20,NA,Vega 2020-10-22,6/12/2020,"Darktable, save jpg",- Experimenting with different ISO
+5/11/2020,19:49,Albireo,Star,,19h30m43.286s,+27d57m34.84s,430,800,1 x 20s,NA,0:00:20,NA,Albireo 2020-11-05,5/11/2020,"Darktable, save jpg",First use of APT slewing and platesolving
+5/11/2020,19:58,Perseus double cluster,Cluster,C14,02h20m0.0s,+57d08m0.0s,7500,800,30 x 60s,10 x 60s,0:30:00,NA,perseus double cluster,20/11/2020,"DSS, Darktable",First stacked image
+6/11/2020,21:28,32 Eridani,Star,,03h54m17s,-02d57m16s,313,800,1 x 20s,NA,0:00:20,NA,32 eridani 2020-11-06,14/11/2020,"Darktable, save jpg",
+6/11/2020,21:26,40 Eridani - Keid,Star,,04h15m16.31963s,-07d39m10.3404s,16,800,1 x 20s,NA,0:00:20,NA,40 Eridani - Keid 2020-11-06,14/11/2020,"Darktable, save jpg",
+6/11/2020,18:18,M27 Dumbbell nebula,Nebula,,19h59m36.340s,+22d43m16.09s,1200,800,40 x 60s,10 x 60s,0:40:00,NA,M27 dumbbell nebula 2020-11-06_crop,29/11/2020,"DSS, Darktable",Second processing run 1/1/2021
+6/11/2020,21:37,M74,Galaxy,,01h36m41.8s,+15d47m01s,,800,1 x 60s,NA,0:01:00,NA,,10/1/2021,"Darktable, save jpg",Speculative single shot of galaxy - reimaged 30/10/21
+6/11/2020,19:11,NGC 2403,Galaxy,C7,07h36m51.4s,+65d36m09s,9700000,800,11 x 120s,20 x 120s,0:22:00,NA,ngc 2403 2020-11-06,1/1/2021,"DSS, startools",Aborted after 11 lights
+6/11/2020,21:34,Uranus,Planet,,,,,800,1 x 20s,NA,0:00:20,NA,,8/11/2020,"Darktable, save jpg - Colour tweaked to increase blue hue",
+17/12/2020,18:46,IC1805 Heart Nebula,Nebula,,02h33m22s,+61d26m36s,7500,800,40 x 60s,10 x 60s,0:40:00,NA,ic1805 heart nebula,31/12/2020,"DSS, Startools",
+17/12/2020,19:42,M31 Andromeda,Galaxy,,00h42m44.3s,+41d16m09s,2500000,800,40 x 60s,10 x 60s,0:40:00,NA,,31/01/2021,"DSS, Startools",
+22/12/2020,16:36,Jupyter/Saturn conjunction,Planet,,,,,800,"20s, 30s, 60s",NA,,NA,,,"DSS, Startools",40 x flats captured
+22/12/2020,17:27,Moon,Moon,,,,,800,Various,,,,,,,
+27/12/2020,18:33,IC 1396 Elephant's Trunk Nebula,Nebula,,21h39m0.0s,+57d29m24s,2400,800,23 x 180s,17 x 180s,1:09:00,40,IC 1396 (2),31/12/2020,"DSS, Startools",
+22/01/2021,18:57,M33 triangulum galaxy,Galaxy,,01h33m50.02s,+30d39m36.7s,3200000,800,20 x 120s,20 x 120s,0:40:00,40,M33,24/01/2021,"DSS, Startools",
+22/01/2021,20:03,Moon,Moon,,,,,800,50 x 1/640s,NA,,NA,moon 2021-01-22,17/09/2021,"PIPP, Autostakkert, Startools",
+22/01/2021,19:58,Moon,Moon,,,,,800,50 x 1/1000s,NA,,NA,,,,
+22/01/2021,19:49,M42 Orion Nebula,Nebula,,05h35m17.3s,-05d23m28s,1300,800,30s/60s single,NA,,NA,,20/02/2021,"DSS, Startools",
+22/01/2021,18:11,Mirach,Star,,01h09m43.92388s,+35d37m14.0075s,197,800,1 x 30s,NA,0:00:30,NA,Mirach and NGC 404,,,
+25/01/2021,19:58,Moon,Moon,,,,,800,50 x 1/4000,NA,,NA,moon 2021-01-26,17/09/2021,"PIPP, Autostakkert, Startools",
+25/01/2021,19:47,M31 Andromeda,Galaxy,,00h42m44.3s,+41d16m09s,2500000,800,30 x 120s,20 x 120s,1:00:00,40,andromeda,31/01/2021,"DSS, Startools",
+26/01/2021,19:27,Mintaka,Star,,05h32m00.40009s,-00d17m56.7424s,1200,800,1 x 30s,NA,0:00:30,NA,Mintaka 2021-01-25,,,
+18/02/2021,21:18,M42 Orion Nebula,Nebula,,05h35m17.3s,-05d23m28s,1300,800,40 x 60,10 x 60s,0:04:00,40,M42-2021-02-18,26/02/2021,"DSS, Startools",
+27/02/2021,19:21,Betelgeuse,Star,,05h55m10.30536s,+07d24m25.3404s,548,800,1 x 30s,NA,0:00:30,NA,betelgeuse 2021-02-27,,,
+27/02/2021,20:50,M36 Pinwheel cluster,Cluster,,05h36m18.0s,+34d08m24s,4340,800,30 x 120s,20 x 120s,1:00:00,40,M36 pinwheel cluster 2021-02-27,13/03/2021,"DSS, Startools",
+27/02/2021,22:03,M38 Starfish cluster,Cluster,,05h28m43s,+35d51m18s,3480,800,30 x 120s,20 x 120s,1:00:00,40,m38 starfish cluster 2021-02-27,06/08/2021,"DSS, Startools",
+27/02/2021,19:32,M44 Beehive cluster,Cluster,,08h40m24s,+19d59m0.0s,610,800,30 x 120s,20 x 120s,1:00:00,40,m44 Beehive Cluster 2021-02-27,13/03/2021,"DSS, Startools",
+28/02/2021,19:23,IC 434 Flame and Horsehead Nebula,Nebula,,05h41m0.0s,-02d30m0.0s,1500,800,30 x 180s,17 x 180s,1:30:00,40,ic434 flame and horsehead nebula 2021-02-28,11/04/2021,"DSS, Startools",
+28/02/2021,21:16,M67,Cluster,,08h51m18s,+11d49m0.0s,2600,800,30 x 120s,20 x 120s,1:00:00,40,M67-2021-02-28,30/10/2021,"DSS, Startools",Re-created 120s master dark on new version of DSS
+25/03/2021,22:16,Arcturus,Star,,14h15m39.7s,+19d10m56s,36.7,800,Various,NA,,NA,Arcturus_2021-03-25,,,
+25/03/2021,21:03,Bob Batchelor star,Star,,13h24m26.591s,+02d44m37.14s,1300,800,20 x 60s,10 x 60s,0:20:00,40,,,,Tracked down from star registry!
+25/03/2021,21:46,M35,Cluster,,06h08m54.0s,+24d20m0.0s,3870,800,14 x 60s,10 x 60s,0:14:00,NA,M35-2021-03-25,31/10/2021,"DSS, Startools","Stopped including flats due to poor quality. Low quality images, wind and/or poor guiding"
+25/03/2021,19:53,NGC 2264 Cone nebula,Nebula,,06h41m0.0s,+09d53m0.0s,2350,800,40 x 60s,17 x 60s,0:40:00,40,ngc2264-2021-03-25,,"DSS, Startools",Poor imagery - windy night? Rejected many frames
+29/03/2021,22:28,Moon,Moon,,,,,800,53 x 1/3200,NA,,NA,,,,
+30/03/2021,22:27,IC405 Flaming Star Nebula,Nebula,C31,05h16m05s,+34d27m49s,1500,800,7 x 120s,20 x 120s,0:14:00,40,,,,"Aborted due to cloud, stacked only 7 frames"
+30/03/2021,21:03,NGC 2237 Rosette Nebula,Nebula,C49,06h33m45s,+04d59m54s,5200,800,30 x 120s,30 x 120s,1:00:00,40,ngc2237 2021-03-30,21/12/21,"DSS, Startools",
+16/04/2021,23:44,HCG44,Galaxy,,10h18m02s,+21d49m0.0s,80000000,800,20 x 120s,20 x 120s,0:40:00,40,hcg44 2021-04-16,21/12/21,"DSS, Startools",
+16/04/2021,21:36,M51 Whirlpool galaxy,Galaxy,,13h29m52.7s,+47d11m43s,31000000,800,40 x 60s,10 x 60s,0:40:00,40,m51 whirlpool 2021-04-16,21/12/21,"DSS, Startools",
+16/04/2021,22:37,M81 (Bode) and M82 (Cigar),Galaxy,,09h55m33.2s,+69d03m55s,12000000,800,40 x 60s,10 x 60s,0:40:00,40,M81 and M82 2021-04-16,1/1/22,"DSS, Startools",
+18/04/2021,21:28,M106,Galaxy,,12h18m57.5s,+47d18m14s,23700000,800,17 x 60s,10 x 60s,0:17:00,40,M106-2021-04-18,5/4/22,"DSS, Startools",
+22/04/2021,23:09,M63 Sunflower Galaxy,Galaxy,,13h15m49.27385s,+42d01m45.7261s,29300000,800,30 x 90s,10 x 90s,0:45:00,40,m63 2021-04-2 zoom(2),,"DSS, Startools",
+22/04/2021,22:13,NGC4631 Whale Galaxy,Galaxy,C32,12h42m08.0s,+32d32m29s,30000000,800,30 x 90s,10 x 90s,0:45:00,40,ngc4631 zoom,,"DSS, Startools",
+22/08/2021,22:07,Saturn,Planet,,,,,800,50 x 1s,NA,0:00:50,NA,,,,
+22/08/2021,23:23,Jupiter,Planet,,,,,800,50 x 1s,NA,0:00:50,NA,,,,
+22/08/2021,23:37,Jupiter,Planet,,,,,800,50 x 1/100s,NA,,NA,,,,
+23/09/2021,20:40,NGC7331,Galaxy,C30,22h37m04.1s,+34d24m56s,39800000,800,17 x 90s,10 x 90s,0:25:30,NEW FLATS,,Abandoned due to cloud,,Coma corrector installed
+23/09/2021,21:34,M101 Pinwheel galaxy,Galaxy,,14h03m12.6s,+54d20m57s,20900000,800,40 x 90s,10 x 90s,1:00:00,31,M101-2021-09-23,8/11/21,"DSS, Startools",
+23/09/2021,22:54,M15,Cluster,,21h29m58.33s,+12d10m01.2s,33600,800,35 x 60s,10 x 60s,0:35:00,31,M15-2021-09-23,20/1/22,"DSS, Startools",
+03/10/2021,20:46,IC342 Hidden galaxy,Galaxy,C5,03h46m48.5s,+68d05m46s,10700000,800,40 x 90s,10 x 90s,1:00:00,31,ic342-2021-10-03,20/1/22,"DSS, Startools",
+03/10/2021,22:20,NGC1579 Northern Trifid,Nebula,,04h30m09.5s,+35d16m19s,2100,800,40 x 90s,10 x 90s,1:00:00,31,ngc1579-2021-10-03,20/1/22,"DSS, Startools",
+30/10/2021,20:56,NGC6946 Fireworks galaxy,Galaxy,C12,20h34m52.3s,+60d09m14s,25200000,800,40 x 90s,10 x 90s,1:00:00,31,ngc6946-2021-10-30,18/2/22,"DSS, Startools",
+30/10/2021,22:53,M74 Phantom Galaxy,Galaxy,,01h36m41.8s,+15d47m01s,30000000,800,40 x 90s,10 x 90s,1:00:00,31,M74-2021-10-30,5/3/22,"DSS, Startools",
+21/1/2022,20:08,ngc281 Pacman nebula,Nebula,,00h52m59.3s,+56d37m19s,9500,800,25 x 90s,10 x 90s,0:37:30,31,,,"DSS, Startools",Battery/power management issues - not visible in developed image
+21/1/2022,22:21,ngc2146,Galaxy,,06h18m37.7s,+78d21m25s,70000000,800,40 x 90s,10 x 90s,1:00:00,31,,,"DSS, Startools",Too small (pixels) to process effectively
+11/2/2022,20:56,ngc2841,Galaxy,,09h22m02.655s,+50d58m35.32s,46000000,800,40 x 90s,10 x 90s,1:00:00,31,NGC2841 2022-02-11,12/4/22,"DSS, Startools",
+25/2/22,22:02,Abell 21 Medusa Nebula,Nebula,,07h29m02.69s,+13d14m48.4s,1500,800,40 x 90s,10 x 90s,1:00:00,31,Abell 21 Medusa nebula 2022-02-25,10/5/22,"DSS, Startools",Poor final image
+25/2/22,19:22,IC405 Flaming Star Nebula,Nebula,,05h16m05s,+34d27m49s,1500,800,40 x 90s,10 x 90s,1:00:00,31,IC405 2022-02-25,11/5/22,"DSS, Startools",
+25/2/22,20:41,M1 Crab Nebula,Nebula,,05h34m31.94s,+22d00m52.2s,6500,800,40 x 90s,10 x 90s,1:00:00,31,M1-2022-02-25,,"DSS, Startools",
+26/2/22,20:58,IC443 Jellyfish Nebula,Nebula,,06h17m13s,+22d31m05s,5000,800,35 x 90s,10 x 90s,0:52:30,31,,,"DSS, Startools",Windy - Battery ran out after 35 lights
+26/2/22,19:35,NGC1499 California Nebula,Nebula,,04h03m18.00s,+36d25m18.0s,1000,800,40 x 90s,10 x 90s,1:00:00,31,,,"DSS, Startools",Windy
+17/3/22,19:58,M45 Pleiades,Cluster,,03h47m24s,+24d07m00s,444,800,40 x 60s,10 x 60s,0:40:00,31,M45 2022-03-17,12/4/22,"DSS, Startools",
+17/3/22,21:12,M78,Nebula,,05h46m46.7s,+00d00m50s,1350,800,40 x 90s,10 x 90s,1:00:00,31,M78-2022-03-17,18/7/22,"DSS, Startools",Poor final image
+18/3/22,21:23,NGC869,Cluster,C14,02h19m06s,+57d09m00s,7500,800,38 x 90s,10 x 60s,0:57:00,31,ngc869-2022-03-18,18/7/22,"DSS, Startools",
+18/3/22,19:57,NGC891 Outer Limits galaxy,Galaxy,C23,02h22m33.4s,+42d20m57s,27300000,800,21 x 90s,10 x 90s,0:31:30,31,ngc 891 2022-03-18,6/9/22,"DSS, Startools",
+19/3/22,19:50,M97 Owl nebula,Nebula,,11h14m47.734s,+55d01m8.50s,2800,800,40 x 90s,10 x 90s,1:00:00,31,M97-2022-03-19,28/9/22,"DSS, Startools",
+22/3/22,20:12,Leo triplet,Galaxy,,11h17m00s,+13d25m00s,35000000,800,40 x 90s,10 x 90s,1:00:00,31,leo triplet 2022-03-22 (2),18/5/22,"DSS, Startools",Re-processed 4/10/23
+22/3/22,21:36,NGC4565 Needle galaxy,Galaxy,C38,12h36m20.8s,+25d59m16s,42700000,800,40 x 90s,10 x 90s,1:00:00,31,,,,
+23/3/22,22:12,NGC2903 ,Galaxy,,09h32m10.111s,+21d30m02.99s,30400000,800,40 x 90s,10 x 90s,1:00:00,31,,,,
+23/3/22,20:51,NGC2403,Galaxy,C7,07h36m51.4s,+65d36m09s,9650000,800,40 x 90s,10 x 90s,1:00:00,31,,,,
+24/3/22,20:35,M64 Black Eye galaxy,Galaxy,,12h56m43.696s,+21d40m57.57s,17300000,800,40 x 90s,10 x 90s,1:00:00,31,,,,
+24/3/22,21:56,NGC7023 Iris nebula,Nebula,C4,21h01m35.60s,+68d10m10.0s,1300,800,40 x 90s,10 x 90s,1:00:00,31,,,,
+25/3/22,22:00,M109,Galaxy,,11h57m36.0s,+53d22m28s,83500000,800,40 x 90s,10 x 90s,1:00:00,31,,,,
+25/3/22,20:41,M95,Galaxy,,10h43m57.7s,+11d42m14s,32600000,800,40 x 90s,10 x 90s,1:00:00,31,,,,
+28/11/23,23:17,Moon,Moon,,,,,,~3000,,,,2023-11-28-231258-Lunar_ss50,29/11/23,"Autostakkert, Startools",SeeStar S50 starts here!!
+28/11/23,21:57,NGC6992 Eastern Veil nebula,Nebula,C33,20h45m38s,+30d42m30s,2400,,129 x 10s,,0:21:30,,ngc6992 2023-11-28 fs,12/12/23,"Siril, Affinity, NoiseXTerminator",
+28/11/23,22:35,M33 triangulum galaxy,Galaxy,,01h33m50.02s,+30d39m36.7s,3200000,,41 x 10s,,0:06:50,,M33 2023-11-28 fs,7/12/23,"Siril, Fits Scrubber",
+28/11/23,22:54,M42 Orion Nebula,Nebula,,05h35m17.3s,-05d23m28s,1300,,66 x 10s,,0:11:00,,M42 2023-11-28 fs,7/12/23,"Siril, Fits Scrubber",
+1/12/23,18:30,NGC 6888 Crescent nebula,,C27,20h12m07s,+38d21m18s,5000,,,,,,,,,
+6/12/23,12:20,Sun,Sun,,,,,,,,,,Sun 2023-12-06 as st,12/12/23,"Autostakkert, Startools",
+6/12/23,18:03,Jupiter,Planet,,,,,,,,,,Jupiter 2023-12-06 st ap,,"Autostakkert, Startools, Affinity",
+6/12/23,18:06,NGC891 Outer Limits galaxy,Galaxy,,02h22m33s,+42d20m54s,27300000,,199 x 10s,,0:33:10,,,,,
+6/12/23,18:58,IC5070 Pelican nebula,Nebula,,20h51m00s,+44d22m00s,1800,,212 x 10s,,0:35:20,,,,,
+6/12/23,19:52,IC1396 Elephant's Trunk nebula,Nebula,,20h51m00s,+57d30m50s,2400,,245 x 10s,,0:40:50,,,,,
+6/12/23,20:55,M45 Pleiades,Cluster,,03h46m24s,+24d06m50s,444.2,,148 x 10s,,0:24:40,,,,,

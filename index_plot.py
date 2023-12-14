@@ -26,7 +26,8 @@ BOUNDARIES = {
     'Virgo Supercluster': 60000000  # radius of local supercluster
 }
 
-IMAGE_FOLDER = 'C:/APT_Images/Processed images'  # top level folder containing image subfolders
+# Note: order is significant, last image found will be used
+IMAGE_FOLDERS = ('C:/APT_Images/Processed images', 'C:/SeeStar_images/Processed images')  # top level folders containing image subfolders
 IMAGE_DATA = 'Observing & Processing information.csv'  # name of spreadsheet, assumed to be in IMAGE_FOLDER
 
 # mapping from image type column in spreadsheet to image folder under IMAGE_FOLDER
@@ -43,7 +44,7 @@ FILE_OUTPUT_FORMATS = ['png', 'pdf']  # output index image in these formats
 FILE_SUFFIX = '_crop'  # look for filename with this suffix first, otherwise default to filename as given
 
 BACKGROUND_COLOUR = (255, 255, 255)  # chart background colour
-LABEL_COLOUR = (255, 0, 0)  # label colour
+LABEL_COLOURS = ((255, 0, 0), (0, 0, 255))  # label colour for each folder in IMAGE_FOLDERS
 SCALE_COLOUR = (0, 0, 250)  # colour of scale lines and text
 BOUNDARY_COLOUR = (0, 250, 0)  # colour of boundary marker lines
 
@@ -62,7 +63,7 @@ class Observation:
     and calculating layout position
     '''
 
-    def __init__(self, target, pathname, distance):
+    def __init__(self, target, pathname, distance, lc):
         # load original image and convert to thumbnail
         image = Image.open(pathname)
         image.thumbnail((THUMBNAIL_SIZE, THUMBNAIL_SIZE))
@@ -83,7 +84,7 @@ class Observation:
         # render the label text
         d = ImageDraw.Draw(labelled_image)
         text_offset = int(round((lab_im_width - text_width) / 2))
-        d.text((text_offset, lab_im_height - BORDER - text_height), target, font = FONT, fill = LABEL_COLOUR)
+        d.text((text_offset, lab_im_height - BORDER - text_height), target, font = FONT, fill = lc)
 
         # set instance vars for layout calculation
         self.image = labelled_image
@@ -125,23 +126,28 @@ class Observation:
 
 def resolve_filename(type, filename):
     if type not in TYPE_MAP:
-        return None
-    pathname_base = f'{IMAGE_FOLDER}/{TYPE_MAP[type]}/{filename}'
+        return None, None
+
     pathname = None
+    lc = None
     # see if there are any files with the suffix and of a valid image type
-    for ext in FILE_INPUT_FORMATS:
-        p = f'{pathname_base}{FILE_SUFFIX}.{ext}'
-        if os.path.exists(p):
-            pathname = p
-            break
-    if pathname is None:
-        # Didn't find a suffix file so look for the original filename
+    for image_folder, label_colour in zip(IMAGE_FOLDERS, LABEL_COLOURS):
+        pathname_base = f'{image_folder}/{TYPE_MAP[type]}/{filename}'
         for ext in FILE_INPUT_FORMATS:
-            p = f'{pathname_base}.{ext}'
+            p = f'{pathname_base}{FILE_SUFFIX}.{ext}'
             if os.path.exists(p):
                 pathname = p
+                lc = label_colour
                 break
-    return pathname
+        if pathname is None:
+            # Didn't find a suffix file so look for the original filename
+            for ext in FILE_INPUT_FORMATS:
+                p = f'{pathname_base}.{ext}'
+                if os.path.exists(p):
+                    pathname = p
+                    lc = label_colour
+                    break
+    return pathname, lc
 
 def draw_labelled_line(d, x, y, h, label, colour):
     d.line([(x, MARGIN), (x, h - MARGIN)], fill = colour)
@@ -157,7 +163,7 @@ def process_data():
     observations = []
     placed_observations = []
 
-    with open(f'{IMAGE_FOLDER}/{IMAGE_DATA}', 'r') as f:
+    with open(IMAGE_DATA, 'r') as f:
         reader = DictReader(f)
         for row in reader:
             target = row[TARGET_COLNAME]
@@ -167,11 +173,11 @@ def process_data():
             if filename == '':
                 # haven't developed this observation yet
                 continue
-            pathname = resolve_filename(type,filename)
+            pathname, lc = resolve_filename(type,filename)
             if pathname is None:
                 print(f'Could not find image file for image named {filename} of type {type}')
                 continue
-            observations.append(Observation(target, pathname, dist))
+            observations.append(Observation(target, pathname, dist, lc))
 
     # sort observations in descending width order to optimize placement
     # thumbnails are approximately thr same size but text label width can be wider than the thumbnail
@@ -220,7 +226,7 @@ def process_data():
     # write master image to file
 
     for format in FILE_OUTPUT_FORMATS:
-        master_image.save(f'{IMAGE_FOLDER}/index_image.{format}', format)
+        master_image.save(f'index_image.{format}', format)
 
 if __name__ == '__main__':
     process_data()
