@@ -28,7 +28,7 @@ BOUNDARIES = {
 
 # Note: order is significant, last image found will be used
 IMAGE_FOLDERS = ('C:/APT_Images/Processed images', 'C:/SeeStar_images/Processed images')  # top level folders containing image subfolders
-IMAGE_DATA = 'Observing & Processing information.csv'  # name of spreadsheet, assumed to be in IMAGE_FOLDER
+IMAGE_DATA = 'Observing & Processing information - Sheet1.csv'  # name of spreadsheet, assumed to be in local folder
 
 # mapping from image type column in spreadsheet to image folder under IMAGE_FOLDER
 
